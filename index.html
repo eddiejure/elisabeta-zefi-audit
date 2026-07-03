@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Audit & Strategie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero-Hintergrundvideo (Index, Audit, Chancen, Danke) -->
+  <div id="heroBg" class="hero-bg" aria-hidden="true">
+    <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/videos/hero-poster.jpg">
+      <source src="assets/videos/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- Kopfzeile -->
+  <header class="topbar">
+    <button id="homeBtn" class="home-btn" title="Zur Startseite" aria-label="Zur Startseite">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 11.5 12 4l9 7.5" />
+        <path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9" />
+      </svg>
+      <span>Home</span>
+    </button>
+
+    <nav id="breadcrumbs" class="breadcrumbs" aria-label="Folien-Navigation"></nav>
+
+    <div class="topbar-right">
+      <span id="slideCounter" class="counter">1 / 1</span>
+    </div>
+  </header>
+
+  <!-- Folienbühne -->
+  <main id="stage" class="stage" tabindex="0"></main>
+
+  <!-- Steuerung -->
+  <button id="prevBtn" class="edge-nav edge-prev" aria-label="Vorherige Folie">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button id="nextBtn" class="edge-nav edge-next" aria-label="Nächste Folie">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+
+  <!-- Fortschrittsbalken -->
+  <div class="progress"><div id="progressFill" class="progress-fill"></div></div>
+
+  <script src="slides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
