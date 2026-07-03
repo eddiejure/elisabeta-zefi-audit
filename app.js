@@ -21,6 +21,9 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;");
 
+  const formatText = (s) =>
+    esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+
   function sectionColor(key) {
     return (SECTIONS[key] && SECTIONS[key].color) || "var(--accent)";
   }
@@ -278,7 +281,7 @@
         ? '<div class="field"><div class="field-label">Eckdaten</div><div class="field-text">' + esc(cs.observation) + "</div></div>"
         : "") +
       (cs.why
-        ? '<div class="field why"><div class="field-label">Warum es sich lohnt</div><div class="field-text">' + esc(cs.why) + "</div></div>"
+        ? '<div class="field why"><div class="field-label">Warum es sich lohnt</div><div class="field-text">' + formatText(cs.why) + "</div></div>"
         : "") +
       "</div>" +
       '<div class="content-media">' + mediaHTML(cs.media, cs.mediaRatio) + "</div>" +
@@ -318,6 +321,12 @@
       "</div>" +
       '<div class="offer-grid">' + features + "</div>" +
       (meta ? '<div class="offer-meta">' + meta + "</div>" : "") +
+      '<div class="offer-scroll-hint" aria-hidden="true">' +
+      '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M6 9l6 6 6-6"/>' +
+      "</svg>" +
+      "<span>scrollen</span>" +
+      "</div>" +
       renderCaseStudy(s.caseStudy) +
       "</div>"
     );

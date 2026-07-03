@@ -1,4 +1,4 @@
-# Website Audit & Pitch – Präsentation
+# Website Audit & Pitch: Präsentation
 
 Eine schlanke HTML/JS-Präsentation (kein Build, keine Abhängigkeiten) für den Kundenpitch.
 Einfach `index.html` im Browser öffnen.
@@ -9,12 +9,12 @@ Einfach `index.html` im Browser öffnen.
 - **Springen:** Mobil per Wischen.
 - **Home:** Button oben links → zurück zur Titelseite.
 - **Navigation oben:** nummerierte Punkte (Breadcrumbs). Beim Drüberfahren zeigt ein Tooltip, worum es auf der Folie geht. Klick springt direkt dorthin. Senkrechte Trenner markieren die Abschnitte (Start / Audit / Produktvideos / Chancen).
-- **Startseite (Hub):** zeigt das Logo und drei Karten – **Audit**, **Produktvideos**, **Chancen**. Klick auf eine Karte springt direkt in den jeweiligen Bereich. Die Chancen liegen bewusst außerhalb des Audits und werden über die Startseite erreicht.
+- **Startseite (Hub):** zeigt das Logo und drei Karten: **Audit**, **Produktvideos**, **Chancen**. Klick auf eine Karte springt direkt in den jeweiligen Bereich. Die Chancen liegen bewusst außerhalb des Audits und werden über die Startseite erreicht.
 
 ## Screenshots & Videos einfügen
 
 Lege deine Dateien in die Ordner `assets/screenshots/` bzw. `assets/videos/`.
-Solange eine Datei fehlt, zeigt die Folie automatisch einen Platzhalter mit dem erwarteten Dateinamen – du musst also nichts im Code ändern, nur die Datei mit dem passenden Namen ablegen.
+Solange eine Datei fehlt, zeigt die Folie automatisch einen Platzhalter mit dem erwarteten Dateinamen; du musst also nichts im Code ändern, nur die Datei mit dem passenden Namen ablegen.
 
 ### Erwartete Screenshot-Dateinamen (`assets/screenshots/`)
 
@@ -34,7 +34,7 @@ Solange eine Datei fehlt, zeigt die Folie automatisch einen Platzhalter mit dem 
 | Impressum „Imprint“ | `impressum-1.png` |
 | Produktseite Sticky-CTA | `produktseite-1.jpg`, `produktseite-2.jpg` |
 | Chance: UGC Instagram | `chance-ugc-1.jpg` |
-| Chance: AI-Bilder | `chance-aibilder-1.jpg` |
+| Chance: KI-Bilder | `chance-aibilder-1.jpg` |
 | Chance: Affiliate | `chance-affiliate-1.jpg` |
 
 ### Produktvideos (`assets/videos/`)
@@ -79,7 +79,7 @@ Reihenfolge ändern = Einträge im `SLIDES`-Array verschieben. Neue Folie = neue
 
 ## Dateien
 
-- `index.html` – Grundgerüst
-- `styles.css` – Design
-- `slides.js` – **Inhalte** (hier anpassen)
-- `app.js` – Präsentations-Logik
+- `index.html`: Grundgerüst
+- `styles.css`: Design
+- `slides.js`: **Inhalte** (hier anpassen)
+- `app.js`: Präsentations-Logik
